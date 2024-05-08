@@ -7,5 +7,8 @@ const apiURL = axios.create({
 const getArticles = () => {
     return apiURL.get("/articles")
 }
+export const getArticle = (article_id) => {
+    return apiURL.get(`/articles/${article_id}`)
+}
 
-export default getArticles
+export default getArticles; getArticle

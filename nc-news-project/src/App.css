@@ -27,6 +27,20 @@
   font-style: italic;
   font-size: 0.6em;
 }
+.article-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+.article-page img{
+  max-width: 70%;
+}
+.article-page h1{
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .article-card-container {
     width: calc(50% - 5px);
