@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ArticleCard = ({articleData}) => {
   return (
-    <Link to={`/${articleData.article_id}`}>
+    <Link to={`/articles/${articleData.article_id}`}>
     <div className='article-card-container'>
     <section className='article-card'>
     <img src={articleData.article_img_url}/>
