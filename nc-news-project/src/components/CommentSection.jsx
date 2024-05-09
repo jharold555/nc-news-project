@@ -7,12 +7,17 @@ const CommentSection = ({ articleID, count }) => {
   const [comments, setComments] = useState([]);
   const [queryLimit, setQueryLimit] = useState(10);
   const [page, setPage] = useState(1);
-
+  
+  useEffect(() => {
+    setPage(1);
+  }, [queryLimit]);
+  
   useEffect(() => {
     getComments(articleID, queryLimit, page).then((response) => {
       setComments(response.data.comments);
     });
   }, [articleID, queryLimit, page]);
+  
 
   const pageIterationButtons = () => {
     const num = count / queryLimit;

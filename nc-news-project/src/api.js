@@ -14,4 +14,7 @@ export const getComments = (articleID, queryLimit, page) => {
     
     return apiURL.get(`/${articleID}/comments?p=${page}&&limit=${queryLimit}`)
 }
-export default getArticles; getArticle; getComments;
+export const patchArticleVotes = (article_id, reqObj) => {
+    return apiURL.patch(`/articles/${article_id}`, reqObj)
+}
+export default getArticles; getArticle; getComments; patchArticleVotes;
