@@ -32,7 +32,7 @@ const ArticlePage = () => {
         <ArticleVoteButton articleID={article_id} articleVotes={articleVotes} setArticleVotes={setArticleVotes}/>
         
         <MdComment style={{fontSize:'30px', marginLeft:'30px'}}/>
-        <a href='#comments' style={{display:'inline-block', fontSize:'1.6rem', }}>{article.comment_count}...</a>
+        <a href='#comments' style={{display:'inline-block', fontSize:'1.6rem', }}>{article.comment_count}</a>
         
         </span>
 
