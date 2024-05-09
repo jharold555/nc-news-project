@@ -4,6 +4,7 @@ import { getComments } from "../api";
 import CommentCard from "./CommentCard";
 import CreateComment from "./CreateComment";
 
+
 const CommentSection = ({ articleID, count }) => {
   const [comments, setComments] = useState([]);
   const [queryLimit, setQueryLimit] = useState(10);
@@ -71,7 +72,7 @@ const CommentSection = ({ articleID, count }) => {
       </span>
 
       {comments.map((comment) => {
-        return <CommentCard commentData={comment} />;
+        return <CommentCard commentData={comment} setComments={setComments} comments={comments}/>;
       })}
     </section>
   );
