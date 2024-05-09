@@ -10,5 +10,8 @@ const getArticles = () => {
 export const getArticle = (article_id) => {
     return apiURL.get(`/articles/${article_id}`)
 }
-
-export default getArticles; getArticle
+export const getComments = (articleID, queryLimit, page) => {
+    
+    return apiURL.get(`/${articleID}/comments?p=${page}&&limit=${queryLimit}`)
+}
+export default getArticles; getArticle; getComments;
