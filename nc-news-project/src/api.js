@@ -21,4 +21,7 @@ export const postComment = (articleID, reqObj) => {
     console.log(reqObj)
     return apiURL.post(`/articles/${articleID}/comments`, reqObj)
 }
+export const deleteComment = (comment_id)  => {
+    return apiURL.delete(`/comments/${comment_id}`)
+  }
 export default getArticles; getArticle; getComments; patchArticleVotes; postComment;
