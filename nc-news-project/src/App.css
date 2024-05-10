@@ -18,7 +18,10 @@
  font-size: 2rem;
 }
 
-
+.dropdown-menu li {
+background-color: lightgray;
+width: fit-content;
+}
 
 .article-card-container {
   display: inline-flex;
@@ -29,7 +32,7 @@
 .article-card {
   margin: 5%;
   padding: 3%;
-  height: 320px;
+  height: fit-content;
   width: 330px;
   background-color: bisque;
 }

@@ -10,6 +10,7 @@ const ArticleCard = ({articleData}) => {
      <h2>{articleData.title}</h2>
      
      <p>By {articleData.author}</p>
+     <p>{articleData.comment_count} comments || {articleData.votes} Votes</p>
     </section>
     </div>
     </Link>
