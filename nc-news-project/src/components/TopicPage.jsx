@@ -16,17 +16,30 @@ const TopicPage = () => {
     const [page, setPage] = useState(1);
     const [sortBy, setSortBy] = useState('created_at')
     const [orderBy, setOrderBy] = useState('desc')
-    
+    const [isError, setIsError] = useState(false);
     useEffect(() => {
         setPage(1);
       }, [queryLimit]);
     useEffect(() => {
-        
+      setIsError(false)
         getArticles(queryLimit, page, sortBy, orderBy, topicStr).then((response) => {
             setArticleList(response.data.articles)
             
+            
+        }).catch((error)=> {
+          setIsError(true)
         })
     }, [queryLimit, page, sortBy, orderBy, topicStr])
+    if (isError) {
+      return (
+        <>
+          <NavBar />
+          <h1 style={{ textAlign: "center" }}>
+            404 Topic "{topic}" Not Found
+          </h1>
+        </>
+      );
+    }
   return (
     <>
     <NavBar/>
