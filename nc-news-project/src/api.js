@@ -3,9 +3,9 @@ import axios from "axios"
 const apiURL = axios.create({
 	baseURL: "https://project-fh4y.onrender.com/api",
 });
-export const getArticles = (queryLimit, page, topic) => {
+export const getArticles = (queryLimit, page, sort_by, order_by, topic) => {
     if(topic === undefined){
-        return apiURL.get(`/articles?p=${page}&&limit=${queryLimit}`)
+        return apiURL.get(`/articles?p=${page}&&limit=${queryLimit}&&sort_by=${sort_by}&&order=${order_by}`)
     }
     else{
         return apiURL.get(`/articles?topic=${topic}&p=${page}&limit=${queryLimit}`)
