@@ -1,3 +1,25 @@
+.h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: lightcyan
+}
+.nav-bar span {
+  display: flexbox;
+  margin-left: 20px;
+}
+.nav-bar h3 {
+ color: rgb(204, 22, 22);
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 2rem;
+}
+
+
+
 .article-card-container {
   display: inline-flex;
   flex-wrap: wrap;
@@ -67,7 +89,7 @@
 }
 
 .comment-card {
-  display: inline-flex;
+  
   height: fit-content;
  width: 500px;
  flex-wrap: wrap;
@@ -89,8 +111,9 @@
   display: block;
   margin-bottom: 10px;
 }
+
 .comment-form input {
-  width: 335px;
+  width: 800px;
   height: 30px;
   margin-bottom: 2px;
 }
@@ -100,13 +123,15 @@
     margin: 2px;
   }
   .article-card {
-    height: 270px;
+    height: max-content;
   }
   .article-card h2 {
     font-size: 12px;
     margin-bottom: 5px;
   }
-  
+  .article-card img {
+    height: 9rem;
+  }
   .comment-card {
     width: calc(70% - 5px);
     padding: 2%;
@@ -128,6 +153,28 @@
     font-size: 1.5rem;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .comment-form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .comment-form input {
+    width: 335px;
+    height: 30px;
+    margin-bottom: 2px;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar span {
+    display: flexbox;
+    margin-left: 20px;
+  }
+  .nav-bar h3 {
+   color: rgb(204, 22, 22);
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem;
   }
 }
 

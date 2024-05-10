@@ -5,6 +5,7 @@ import { useState } from 'react'
 import CommentSection from './CommentSection'
 import ArticleVoteButton from './ArticleVoteButton'
 import { MdComment } from "react-icons/md";
+import NavBar from './NavBar'
 
 const ArticlePage = () => {
     const [article, setArticle] = useState({})
@@ -22,6 +23,7 @@ const ArticlePage = () => {
     
       return (
         <>
+        <NavBar/>
     <section className='article-page'>
         <h1>{article.title}</h1>
         
