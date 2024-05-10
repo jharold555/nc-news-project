@@ -9,7 +9,6 @@ const CreateComment = ({ comments, setComments, articleID }) => {
   const [successfulSubmit, setSuccessfulSubmit] = useState(false);
 
   useEffect(() => {
-    console.log(valid);
     if (valid && hasSubmit) {
       postComment(articleID, { username: "tickle122", body: commentBody }).then(
         (response) => {
