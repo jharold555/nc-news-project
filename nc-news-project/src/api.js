@@ -8,7 +8,7 @@ export const getArticles = (queryLimit, page, sort_by, order_by, topic) => {
         return apiURL.get(`/articles?p=${page}&&limit=${queryLimit}&&sort_by=${sort_by}&&order=${order_by}`)
     }
     else{
-        return apiURL.get(`/articles?topic=${topic}&p=${page}&limit=${queryLimit}`)
+        return apiURL.get(`/articles?topic=${topic}&p=${page}&limit=${queryLimit}&&sort_by=${sort_by}&&order=${order_by}`)
     }
     
    

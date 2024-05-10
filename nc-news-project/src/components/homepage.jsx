@@ -29,7 +29,7 @@ const Homepage = () => {
     <h1 style={{fontFamily:'Arial, Helvetica, sans-serif', textAlign:'center'}}>Welcome to NC news!</h1>
     
     <PageIteration count={50} queryLimit={queryLimit} setPage={setPage} setQueryLimit={setQueryLimit}/>
-     <SortDropdown setSortBy={setSortBy} setOrderBy={setOrderBy} orderBy={orderBy}/>
+     <SortDropdown setSortBy={setSortBy} setOrderBy={setOrderBy} />
     
 
     {articleList.map((article) => {
