@@ -31,7 +31,7 @@ const NavBar = () => {
         const topicName =
           topic.slug.substring(0, 1).toUpperCase() + topic.slug.substring(1);
         return (
-          <span>
+          <span key={topic.slug}>
             <Link to={`/articles/topics/${topicName}`}>
               <h3>{topicName}</h3>
             </Link>

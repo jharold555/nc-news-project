@@ -30,7 +30,7 @@ const Homepage = () => {
     
 
     {articleList.map((article) => {
-        return <ArticleCard articleData={article}/>
+        return <ArticleCard key={article.article_id} articleData={article}/>
     })}
     </>
    

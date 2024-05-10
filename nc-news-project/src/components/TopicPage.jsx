@@ -31,7 +31,7 @@ const TopicPage = () => {
     <h1 style={{fontFamily: 'Arial, Helvetica, sans-serif', textAlign:'center'}}>{topic}</h1>
     <PageIteration count={20} queryLimit={queryLimit} setPage={setPage} setQueryLimit={setQueryLimit}/>
     {articleList.map((article) => {
-        return <ArticleCard articleData={article}/>
+        return <ArticleCard key={article.article_id} articleData={article}/>
     })}
     </>
     

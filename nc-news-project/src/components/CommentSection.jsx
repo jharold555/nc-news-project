@@ -72,7 +72,7 @@ const CommentSection = ({ articleID, count }) => {
       </span>
 
       {comments.map((comment) => {
-        return <CommentCard commentData={comment} setComments={setComments} comments={comments}/>;
+        return <CommentCard key={comment.comment_id} commentData={comment} setComments={setComments} comments={comments}/>;
       })}
     </section>
   );

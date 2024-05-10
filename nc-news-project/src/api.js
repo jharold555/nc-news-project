@@ -13,10 +13,6 @@ export const getArticles = (queryLimit, page, topic) => {
     
    
 }
-// export const getArticles = (queryLimit, page) => {
-//    console.log(queryLimit)
-//     return apiURL.get(`/articles?p=${page}&&limit=${queryLimit}`)
-// }
 
 export const getArticle = (article_id) => {
     return apiURL.get(`/articles/${article_id}`)
